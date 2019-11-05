@@ -1,0 +1,31 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid grey
+}
+
+.cell.block {
+    background: #333;
+}
+
+.startNode {
+    background: blue;
+}
+
+.targetNode {
+    background: orange;
+}
+
+.path {
+    background: red;
+}

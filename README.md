@@ -10,6 +10,11 @@ that would include both Dijkstra and A*
 
 # usage
 
+    npm i
+    npm start
+   
+ open (http://localhost:3000)
+ 
 please draw any shape of obstacles between start and target node
 then hit the button to find the shortest path
 you can also change the size, then hit update settings

@@ -24,7 +24,7 @@ class App extends React.Component {
             speed: defaultSpeed,
             startNode: defaultStartNode,
             targetNode: defaultTargetNode,
-            msg: "",
+            msg: "Draw walls in the grid then hit the button to find the shortest path ",
             isOrthogonal: true
         });
         this.state = {
@@ -159,10 +159,20 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
+                <h1>Shortest Path on Graph</h1>
+                <h3>By: Hadi Yaghinloo</h3>
                 <Controlbar updateBoard={this.setBoard}/>
-                <button id={"solve"} onClick={this.solve}> Find The Shortest Path</button>
-                <Board handleBoardChange={this.handleBoardChange} {...this.state}/>
                 <p>{this.state.msg}</p>
+                <button id={"solve"} onClick={this.solve}> Find The Shortest Path</button>
+
+                <button onClick={
+                    () => {
+                        window.location.reload()
+                    }
+                }>Reload
+                </button>
+                <Board handleBoardChange={this.handleBoardChange} {...this.state}/>
+
             </div>
         );
     }

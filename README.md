@@ -5,13 +5,11 @@ This project is a presentation of the algorithm of finding the shortest path on 
 
 It uses BFS traversal to find the shortest path.
 i will add Heuristics to this logic to make it more efficient.
+that would include both Dijkstra and A*
 
 please check the live version of this project on : (https://pathfinding-js.herokuapp.com/).
 
 please be patient since Heroku platform works slowly for free accounts.
-
-
-that would include both Dijkstra and A*
 
 # usage
 
